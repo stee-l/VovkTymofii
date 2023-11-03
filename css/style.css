@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    color: aqua;
+}
+
+p {
+    color: blue;
+}
+
+#element-with-id {
+    color: red;
+}
+
+.element-with-class {
+    color: green;
+}
+
+ .element-with-class1.multiple-classes {
+     background-color: yellow; font-weight: bold; color: #000;
+}
+
+div p {
+    font-weight: bold; color: blueviolet;
+}
+
+.one {
+ color: rgb(255, 145, 0);
+}
+
+.two {
+ color: antiquewhite;
+}
+
+.three {
+ color: rgb(72, 255, 0);
+}
+
+.four {
+ color: rgb(238, 139, 139);
+}
+
+.five {
+ color: rgb(51, 31, 31);
+}
