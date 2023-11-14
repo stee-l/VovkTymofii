@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #909090;
+    text-align: center;
+}
+
+.title-card {
+    color: #303030;
+    font-weight: 700;
+}
+
+.title-detailed {
+  text-align: right;
+  color: blue;
+  font-weight: 400;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+hr {margin-top: 5px;}
+
+img {
+    max-width: 260px;
+    border-radius: 0.5rem;
+}
+
+.container {
+width: 300px;
+padding: 1rem;
+border-radius: 1rem;
+box-shadow: 0 0 30px rgba(50, 50, 100, 0.25);
+margin: auto;
+}
