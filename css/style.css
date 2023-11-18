@@ -1,4 +1,4 @@
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,22 +39,22 @@ body {
 .clearfix {
     display: block;
     clear: both;
-    height: 200px;
 }
 
 .float-left {
     float: left;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     margin-inline: 0 15px;
 }
 
 .float-right {
     float: right;
-    margin-inline: 15px 0;
+    margin-inline: 10;
 }
 
 .wrapper {
     background: #E6E6E6;
+    margin-bottom: 50px;
 }
 
 .square {
