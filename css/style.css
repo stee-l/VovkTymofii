@@ -8,7 +8,7 @@
     --secondary-text-color: #727272;
     --text-color: #FFFFFF;
  }
- 
+
  * {
     margin: 0;
     padding: 0;
@@ -20,10 +20,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 1100px;
-    object-fit: cover;
-}
 
 html {
     font-family: 'Roboto', sans-serif;
@@ -140,3 +136,96 @@ button {
     background-color: var(--secondary-color);
     height: 250px;
 }
+
+.projects-img {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 10px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.element-container {
+    margin-right: 50px;
+  }
+
+  .element-text {
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+.project-p {
+    color: var(--text-color);
+font-size: 16px;
+font-weight: 400;
+}
+
+  h3 {
+    color: var(--text-color);
+font-size: 21px;
+font-weight: 500;
+  }
+
+.last-section {
+    background-color: var(--bg-color);
+    height: 1004px;
+}
+
+.section-title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 32px;
+        padding-top: 100px;
+}
+
+.work-text {
+    text-align: center;
+    width: 540px;
+    height: 67px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--secondary-text-color);
+}
+
+.image-container {
+    position: relative;
+    margin-top: 57px;
+  }
+  
+  .button-image {
+    position: absolute;
+    top: 250px;
+    left: 505px;
+  }
+
+  .footer {
+    height: 151px;
+    background-color: var(--secondary-color);
+  }
+
+  .footer-title {
+    color: #FFF;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 50px
+  }
+
+  .footer-text {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
