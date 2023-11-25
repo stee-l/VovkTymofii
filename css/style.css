@@ -1,228 +1,220 @@
- :root {
-    --container-width: 1100px;
-    --basic-space: 1rem;
-    --primary-color: #EEEFF1;
-    --secondary-color: #34547A;
-    --bg-color: #F9F9F9;
-    --primary-text-color: #000000;
-    --secondary-text-color: #727272;
-    --text-color: #FFFFFF;
- }
+:root {
+  --container-width: 1100px;
+  --basic-space: 1rem;
+  --primary-color: #eeeff1;
+  --secondary-color: #34547a;
+  --bg-color: #f9f9f9;
+  --primary-text-color: #000000;
+  --secondary-text-color: #727272;
+  --text-color: #ffffff;
+}
 
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-
 html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.65;
-    font-weight: 400;
-    color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  font-weight: 400;
+  color: var(--primary-text-color);
 }
 
 body {
-    display: grid;
-    grid-template-rows: auto 1 fr auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .container {
-    width: 100%;
-    max-width: calc(var(--container-width) + var(--basic-space) * 2);
-    padding-left: var(--basic-space);
-    padding-right: var(--basic-space);
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  max-width: calc(var(--container-width) + var(--basic-space) * 2);
+  padding-left: var(--basic-space);
+  padding-right: var(--basic-space);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
 }
 
 /* ---------HEADER-------------------------------------------------- */
 
 .header {
-    background-color: var(--primary-color);
-    padding-top: calc(var(--basic-space) * 5);
+  background-color: var(--primary-color);
+  padding-top: calc(var(--basic-space) * 5);
 }
 
 .nav-header {
-    font-weight: 500;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
 }
 
 .homepage {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 a {
-    margin-right: calc(var(--basic-space) * 2.625);
+  margin-right: calc(var(--basic-space) * 2.625);
 }
 
 /* ---------FIRST SECTION-------------------------------------------------- */
 
 .first-section {
-    background-color: var(--primary-color);
-    padding-top: calc(var(--basic-space) * 9.375);
-    padding-bottom: calc(var(--basic-space) * 8.75);
+  background-color: var(--primary-color);
+  padding-top: calc(var(--basic-space) * 9.375);
+  padding-bottom: calc(var(--basic-space) * 8.75);
 }
 
 .main-title {
-    font-size: 48px;
-    font-weight: 500;
+  font-size: 48px;
+  font-weight: 500;
 }
 
 .main-text {
-    max-width: calc(var(--basic-space) * 33.75);
-    max-height: calc(var(--basic-space) * 4.188);
-    margin-top: calc(var(--basic-space) * 3.75);
-    color: var(--secondary-text-color);
-    display: inline-block;
+  max-width: calc(var(--basic-space) * 33.75);
+  max-height: calc(var(--basic-space) * 4.188);
+  margin-top: calc(var(--basic-space) * 3.75);
+  color: var(--secondary-text-color);
+  display: inline-block;
 }
 
 .btn {
-    margin-top: calc(var(--basic-space) * 4.063);
+  margin-top: calc(var(--basic-space) * 4.063);
 }
 
 button {
-    min-width: calc(var(--basic-space) * 14.063);
-    min-height: calc(var(--basic-space) * 4.063);
-    background: var(--secondary-color);
-    color: var(--text-color);
-    letter-spacing: 1.6px;
-    border: none;
+  min-width: calc(var(--basic-space) * 14.063);
+  min-height: calc(var(--basic-space) * 4.063);
+  background: var(--secondary-color);
+  color: var(--text-color);
+  letter-spacing: 1.6px;
+  border: none;
 }
 
 /* ---------ABOUT SECTION-------------------------------------------------- */
 
 .about-section {
-    background-color: var(--bg-color);
-    padding-top: calc(var(--basic-space) * 7);
-    padding-bottom: calc(var(--basic-space) * 6.25);
+  background-color: var(--bg-color);
+  padding-top: calc(var(--basic-space) * 7);
+  padding-bottom: calc(var(--basic-space) * 6.25);
 }
 
 .about-title {
-    text-align: center;
-    font-weight: 500;
-    font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
 }
 
 .about-text {
-    margin-top: calc(var(--basic-space) * 3.125);
-    color: var(--secondary-text-color);
+  margin-top: calc(var(--basic-space) * 3.125);
+  color: var(--secondary-text-color);
 }
 
 .some-text {
-    text-align: center;
-    max-width: calc(var(--basic-space) * 33.7);
-    margin-left: auto;
-    margin-right: auto;
-    line-height: calc(var(--basic-space) * 1.641);
+  text-align: center;
+  max-width: calc(var(--basic-space) * 33.7);
+  margin-left: auto;
+  margin-right: auto;
+  line-height: calc(var(--basic-space) * 1.641);
 }
 
 /* ---------RESULT SECTION-------------------------------------------------- */
 
 .result-section {
-    background-color: var(--secondary-color);
-    padding-top: calc(var(--basic-space) * 6.25);
-    padding-bottom: calc(var(--basic-space) * 6.25);
+  background-color: var(--secondary-color);
+  padding-top: calc(var(--basic-space) * 6.25);
+  padding-bottom: calc(var(--basic-space) * 6.25);
 }
 
 .projects-img {
-    margin-left: calc(var(--basic-space) * 0.25);
+  margin-left: calc(var(--basic-space) * 0.25);
 }
 
 .float-left {
-    float: left;
+  float: left;
 }
 
 .float-right {
-    float: right;
+  float: right;
 }
 
 .clearfix {
-    clear: both;
+  clear: both;
 }
 
 .element-container {
-    margin-right: calc(var(--basic-space) * 3.125);
-  }
+  margin-right: calc(var(--basic-space) * 3.125);
+}
 
-  .element-text {
-    display: inline-block;
-    margin-left: calc(var(--basic-space) * 1.25);
-  }
+.element-text {
+  display: inline-block;
+  margin-left: calc(var(--basic-space) * 1.25);
+}
+
+.element-text > h3 {
+  color: var(--text-color);
+  font-size: 21px;
+  font-weight: 500;
+}
 
 .project-p {
-    color: var(--text-color);
-    font-size: 16px;
-    font-weight: 400;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* ---------LAST SECTION-------------------------------------------------- */
 
-  h3 {
-    color: var(--text-color);
-    font-size: 21px;
-    font-weight: 500;
-  }
-
 .last-section {
-    background-color: var(--bg-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.section-title {
-        text-align: center;
-        font-weight: 500;
-        font-size: 32px;
+  background-color: var(--bg-color);
+  padding-top: calc(var(--basic-space) * 6.25);
+  padding-bottom: calc(var(--basic-space) * 6.25);
 }
 
 .work-text {
-    text-align: center;
-    width: 540px;
-    height: 67px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--secondary-text-color);
+  text-align: center;
+  max-width: calc(var(--basic-space) * 33.75);
+  min-height: calc(var(--basic-space) * 4.188);
+  margin-top: calc(var(--basic-space) * 3.125);
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--secondary-text-color);
 }
 
-.image-container {
-    position: relative;
-    margin-top: 57px;
-  }
-  
-  .button-image {
-    position: absolute;
-    top: 250px;
-    left: 505px;
-  }
+iframe {
+  margin-top: calc(var(--basic-space) * 3.563);
+}
 
-  /* ---------FOOTER-------------------------------------------------- */
+/* ---------FOOTER-------------------------------------------------- */
 
-  .footer {
-    height: 151px;
-    background-color: var(--secondary-color);
-  }
+.footer {
+  padding-top: calc(var(--basic-space) * 3.125);
+  padding-bottom: calc(var(--basic-space) * 3.125);
+  background-color: var(--secondary-color);
+}
 
-  .footer-title {
-    color: #FFF;
-    font-size: 21px;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 50px
-  }
+.footer-title {
+  color: var(--text-color);
+  font-size: 21px;
+  font-weight: 500;
+}
 
-  .footer-text {
-    color: #FFF;
-    font-size: 13px;
-    font-weight: 400;
-    margin-top: 20px;
-  }
+.footer-text {
+  color: var(--text-color);
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: calc(var(--basic-space) * 1.25);
+}
