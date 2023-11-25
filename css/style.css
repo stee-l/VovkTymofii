@@ -43,104 +43,98 @@ body {
     margin-right: auto;
 }
 
-.py-rem {
-    padding-top: var(--basic-space);
-    padding-bottom: var(--basic-space);
+/* ---------HEADER-------------------------------------------------- */
+
+.header {
+    background-color: var(--primary-color);
+    padding-top: calc(var(--basic-space) * 5);
 }
 
-h1 {
+.nav-header {
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.homepage {
+    color: var(--secondary-color);
+}
+
+a {
+    margin-right: calc(var(--basic-space) * 2.625);
+}
+
+/* ---------FIRST SECTION-------------------------------------------------- */
+
+.first-section {
+    background-color: var(--primary-color);
+    padding-top: calc(var(--basic-space) * 9.375);
+    padding-bottom: calc(var(--basic-space) * 8.75);
+}
+
+.main-title {
     font-size: 48px;
     font-weight: 500;
 }
 
-ul {
-    margin-top: 79px;
-    font-weight: 500;
-    letter-spacing: 1.6px;
-}
-
-li {
-    list-style: none;
-    display: inline-block;
-    text-transform: uppercase;
-    margin-left: 42px;
-    height: 27px;
-}
-
-.first-li {
-    margin-left: 0;
-    color: var(--secondary-color);
-    height: 27px;
-}
-
-.header {
-    background-color: var(--primary-color);
-    height: 106px;
-}
-
-.first-section {
-    background-color: var(--primary-color);
-    padding-top: 151px;
-    height: 594px;
-}
-
 .main-text {
-    width: 540px;
-    height: 67px;
-    padding-top: 60px;
+    max-width: calc(var(--basic-space) * 33.75);
+    max-height: calc(var(--basic-space) * 4.188);
+    margin-top: calc(var(--basic-space) * 3.75);
     color: var(--secondary-text-color);
     display: inline-block;
 }
 
 .btn {
-    margin-top: 65px;
+    margin-top: calc(var(--basic-space) * 4.063);
 }
 
 button {
-    width: 225px;
-    height: 65px;
+    min-width: calc(var(--basic-space) * 14.063);
+    min-height: calc(var(--basic-space) * 4.063);
     background: var(--secondary-color);
     color: var(--text-color);
     letter-spacing: 1.6px;
     border: none;
 }
 
+/* ---------ABOUT SECTION-------------------------------------------------- */
+
 .about-section {
     background-color: var(--bg-color);
-    height: 359px;
+    padding-top: calc(var(--basic-space) * 7);
+    padding-bottom: calc(var(--basic-space) * 6.25);
 }
 
 .about-title {
     text-align: center;
-    padding-top: 112px;
     font-weight: 500;
     font-size: 32px;
 }
 
 .about-text {
-    text-align: center;
-    width: 540px;
-    height: 67px;
-    padding-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: calc(var(--basic-space) * 3.125);
     color: var(--secondary-text-color);
 }
 
 .some-text {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    text-align: center;
+    max-width: calc(var(--basic-space) * 33.7);
+    margin-left: auto;
+    margin-right: auto;
+    line-height: calc(var(--basic-space) * 1.641);
 }
+
+/* ---------RESULT SECTION-------------------------------------------------- */
 
 .result-section {
     background-color: var(--secondary-color);
-    height: 250px;
+    padding-top: calc(var(--basic-space) * 6.25);
+    padding-bottom: calc(var(--basic-space) * 6.25);
 }
 
 .projects-img {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-left: 10px;
+    margin-left: calc(var(--basic-space) * 0.25);
 }
 
 .float-left {
@@ -156,37 +150,38 @@ button {
 }
 
 .element-container {
-    margin-right: 50px;
+    margin-right: calc(var(--basic-space) * 3.125);
   }
 
   .element-text {
     display: inline-block;
-    margin-left: 20px;
-    text-align: center;
+    margin-left: calc(var(--basic-space) * 1.25);
   }
 
 .project-p {
     color: var(--text-color);
-font-size: 16px;
-font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
 }
+
+/* ---------LAST SECTION-------------------------------------------------- */
 
   h3 {
     color: var(--text-color);
-font-size: 21px;
-font-weight: 500;
+    font-size: 21px;
+    font-weight: 500;
   }
 
 .last-section {
     background-color: var(--bg-color);
-    height: 1004px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .section-title {
         text-align: center;
         font-weight: 500;
         font-size: 32px;
-        padding-top: 100px;
 }
 
 .work-text {
@@ -209,6 +204,8 @@ font-weight: 500;
     top: 250px;
     left: 505px;
   }
+
+  /* ---------FOOTER-------------------------------------------------- */
 
   .footer {
     height: 151px;
