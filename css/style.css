@@ -1,13 +1,38 @@
+:root {
+    --container-width: 1100px;
+    --basic-space: 1rem;
+  }
+
  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    color: #202020;
+    color: var();
 }
+
+.container {
+    width: 100%;
+    max-width: calc(var(--container-width) + var(--basic-space) * 2);
+    padding-left: var(--basic-space);
+    padding-right: var(--basic-space);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* HEADER */
+
