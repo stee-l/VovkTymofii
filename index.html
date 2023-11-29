@@ -1,15 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework template</title>
+    <title>Homework #10 Flex-practice</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="#">Amelia F</a>
+        <nav class="nav-header">
+          <a href="#">Главная</a>
+          <a href="#">О нас</a>
+          <a href="#">Как мы работаем</a>
+          <a href="#">Наши работы</a>
+          <a href="#">Контакты</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="container">
+          <div class="wrapper">
+            <h1 class="main-title">Amelia Flowers</h1>
+            <p class="section-text">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века.
+            </p>
+            <button class="order-btn" type="button">Заказать букет</button>
+            <button class="help-btn" type="button">Помощь флориста</button>
+          </div>
+          <img src="./images/flowers.jpg" alt="flowers" />
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="container">
+          <h2>О НАС</h2>
+          <div>
+            <p class="section-text">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="advantages-section">
+        <div class="container">
+          <div class="card">
+            <img src="./images/icons/Price.svg" alt="Лучшие цены" />
+            <p>Лучшие цены</p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/icons/Individual.svg"
+              alt="Индивидуальный подбор"
+            />
+            <p>Индивидуальный подбор</p>
+          </div>
+          <div class="card">
+            <img src="./images/icons/Fast.svg" alt="Быстрая доставка" />
+            <p>Быстрая доставка</p>
+          </div>
+          <div class="card">
+            <img src="./images/icons/Always.svg" alt="Всегда свежие цветы" />
+            <p>Всегда свежие цветы</p>
+          </div>
+          <div class="card">
+            <img src="./images/icons/Bonus.svg" alt="Бонусная система" />
+            <p>Бонусная система</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
