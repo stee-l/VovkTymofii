@@ -71,7 +71,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 130px;
+  gap: 120px;
 }
 
 .logo {
@@ -213,7 +213,7 @@ h2 {
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  gap: 280px;
+  gap: 275px;
 }
 
 .logo-footer {
