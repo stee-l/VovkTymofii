@@ -1,62 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework #12 Moxa</title>
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="big-container flex flex-between gap40 position-center">
-        <div class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="131"
-            height="32"
-            viewBox="0 0 131 32"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_1_17)">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework #12 Moxa</title>
+  <link rel="stylesheet" href="./fonts/stylesheet.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="big-container flex flex-between gap40 position-center">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="131" height="32" viewBox="0 0 131 32" fill="none">
+          <g clip-path="url(#clip0_1_17)">
+            <path
+              d="M63.5684 7.39453C65.2279 7.39453 66.5598 7.9404 67.5642 9.03214C68.5686 10.1021 69.0708 11.5104 69.0708 13.2572V23.9999H64.6165V13.2572C64.6165 12.6458 64.4746 12.1654 64.1907 11.8161C63.9069 11.4449 63.5357 11.2593 63.0771 11.2593H61.6688C61.0574 11.2593 60.5225 11.4886 60.0639 11.9471C59.6054 12.3838 59.3215 12.9733 59.2124 13.7157V23.9999H54.7581V13.2899C54.7581 12.6786 54.6161 12.1873 54.3323 11.8161C54.0484 11.4449 53.6773 11.2593 53.2187 11.2593H51.9414C51.3082 11.2593 50.7514 11.5432 50.271 12.1109C49.7907 12.6786 49.485 13.421 49.354 14.338V23.9999H44.8997V7.65655H49.0264V9.55618C49.4195 8.90113 49.9217 8.3771 50.533 7.98407C51.1663 7.59105 51.7995 7.39453 52.4327 7.39453H54.2668C55.0528 7.39453 55.7625 7.60196 56.3957 8.01682C57.0507 8.43169 57.5638 9.01031 57.935 9.75269C58.4154 9.01031 58.9831 8.43169 59.6382 8.01682C60.315 7.60196 61.0247 7.39453 61.767 7.39453H63.5684ZM78.656 24.2619C77.2804 24.2619 76.0576 23.9999 74.9877 23.4759C73.9396 22.93 73.1208 22.1658 72.5313 21.1832C71.9636 20.2006 71.6797 19.0652 71.6797 17.777V13.945C71.6797 12.6567 71.9745 11.5213 72.564 10.5388C73.1536 9.53435 73.9724 8.75921 75.0205 8.21334C76.0904 7.66747 77.3131 7.39453 78.6887 7.39453H81.6364C83.012 7.39453 84.2238 7.66747 85.2719 8.21334C86.3418 8.75921 87.1715 9.53435 87.7611 10.5388C88.3506 11.5213 88.6454 12.6567 88.6454 13.945V17.777C88.6454 19.0652 88.3506 20.2006 87.7611 21.1832C87.1715 22.1658 86.3418 22.93 85.2719 23.4759C84.2238 23.9999 83.0011 24.2619 81.6037 24.2619H78.656ZM81.5382 20.4299C82.346 20.4299 82.9902 20.157 83.4705 19.6111C83.9509 19.0434 84.1911 18.3119 84.1911 17.4167V14.2398C84.1911 13.3445 83.9509 12.624 83.4705 12.0781C82.9902 11.5104 82.357 11.2266 81.5709 11.2266H78.7542C77.9682 11.2266 77.335 11.5104 76.8546 12.0781C76.3742 12.624 76.134 13.3445 76.134 14.2398V17.4167C76.134 18.3119 76.3742 19.0434 76.8546 19.6111C77.335 20.157 77.9572 20.4299 78.7215 20.4299H81.5382ZM94.8793 15.7136L88.8857 7.65655H93.864L97.4668 12.5039L101.07 7.65655H106.048L100.054 15.7136L106.244 23.9999H101.266L97.4668 18.8905L93.6675 23.9999H88.6892L94.8793 15.7136ZM112.422 24.2619C110.718 24.2619 109.343 23.8361 108.295 22.9846C107.247 22.133 106.723 21.0085 106.723 19.6111V18.3993C106.723 17.0237 107.269 15.921 108.36 15.0913C109.452 14.2398 110.893 13.814 112.684 13.814H114.681C115.249 13.814 115.861 13.8904 116.516 14.0432C117.171 14.1961 117.771 14.4035 118.317 14.6655V12.9624C118.317 12.4165 118.131 11.9799 117.76 11.6523C117.411 11.303 116.941 11.1283 116.352 11.1283H113.535C112.924 11.1283 112.432 11.2702 112.061 11.5541C111.69 11.8379 111.504 12.22 111.504 12.7004H107.181C107.181 11.1065 107.76 9.82912 108.917 8.86838C110.096 7.88582 111.635 7.39453 113.535 7.39453H116.352C118.273 7.39453 119.824 7.90765 121.003 8.93389C122.182 9.93829 122.771 11.2811 122.771 12.9624V23.9999H118.644V22.0348C118.12 22.7116 117.476 23.2575 116.712 23.6724C115.948 24.0654 115.195 24.2619 114.452 24.2619H112.422ZM114.78 20.8557C115.588 20.8557 116.308 20.6483 116.941 20.2334C117.575 19.8185 118.033 19.2617 118.317 18.563V18.0062C117.968 17.7442 117.476 17.5368 116.843 17.3839C116.232 17.2311 115.577 17.1547 114.878 17.1547H112.815C112.291 17.1547 111.865 17.2857 111.537 17.5477C111.21 17.8097 111.046 18.1591 111.046 18.5958V19.4473C111.046 19.8622 111.221 20.2006 111.57 20.4627C111.941 20.7247 112.422 20.8557 113.011 20.8557H114.78ZM128.077 24.3274C127.269 24.3274 126.614 24.0872 126.111 23.6069C125.631 23.1047 125.391 22.4496 125.391 21.6417C125.391 20.8338 125.631 20.1897 126.111 19.7094C126.614 19.2072 127.269 18.9561 128.077 18.9561C128.885 18.9561 129.529 19.2072 130.009 19.7094C130.511 20.1897 130.762 20.8338 130.762 21.6417C130.762 22.4496 130.511 23.1047 130.009 23.6069C129.529 24.0872 128.885 24.3274 128.077 24.3274Z"
+              fill="#161513" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.1429 0H14.8571V10.1205L11.0659 0.736931L8.94666 1.59318L12.8361 11.2198L5.49442 3.87816L3.87818 5.49442L10.9148 12.5311L1.79586 8.5469L0.880734 10.6414L10.5297 14.8571H0V17.1429H10.5297L0.880738 21.3586L1.79586 23.4531L10.9148 19.469L3.87818 26.5056L5.49442 28.1218L12.8361 20.7802L8.94666 30.4069L11.0659 31.263L14.8571 21.8795V32H17.1429V21.8795L20.9341 31.263L23.0533 30.4069L19.164 20.7802L26.5056 28.1218L28.1218 26.5056L21.0851 19.469L30.2042 23.4531L31.1192 21.3586L21.4704 17.1429H32V14.8571H21.4702L31.1192 10.6414L30.2042 8.5469L21.0851 12.5311L28.1218 5.4944L26.5056 3.87816L19.164 11.2198L23.0533 1.59318L20.9341 0.736931L17.1429 10.1205V0Z"
+              fill="#E94D35" />
+          </g>
+          <defs>
+            <clipPath id="clip0_1_17">
+              <rect width="131" height="32" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="nav flex">
+        <a href="#">Home
+          <hr />
+        </a>
+        <a href="#">About
+          <hr />
+        </a>
+        <a href="#">Contact
+          <hr />
+        </a>
+      </div>
+      <div>
+        <button class="btn-header" type="button">Let's talk</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="main-section">
+      <div class="big-container flex flex-between position-center">
+        <div class="about-section">
+          <div class="text56">
+            <p>HI, I’M TAYLER.</p>
+            <p class="mr4">A CREATIVE <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                fill="none">
+                <g clip-path="url(#clip0_1_27)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21.4286 0H18.5714V12.6506L13.8324 0.921164L11.1833 1.99147L16.0451 14.0248L6.86802 4.8477L4.84772 6.86802L13.6435 15.6638L2.24482 10.6836L1.10092 13.3018L13.1621 18.5714H0V21.4286H13.1621L1.10092 26.6982L2.24482 29.3164L13.6435 24.3362L4.84772 33.132L6.86802 35.1522L16.0451 25.9752L11.1833 38.0086L13.8324 39.0788L18.5714 27.3494V40H21.4286V27.3494L26.1676 39.0788L28.8166 38.0086L23.955 25.9752L33.132 35.1522L35.1522 33.132L26.3564 24.3362L37.7552 29.3164L38.899 26.6982L26.838 21.4286H40V18.5714H26.8378L38.899 13.3018L37.7552 10.6836L26.3564 15.6638L35.1522 6.868L33.132 4.8477L23.955 14.0248L28.8166 1.99147L26.1676 0.921164L21.4286 12.6506V0Z"
+                    fill="#E94D35" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_27">
+                    <rect width="40" height="40" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg> DESIGNER</p>
+            <p>BASED IN LONDON</p>
+          </div>
+          <div class="who flex position-center">
+            <p>DESIGN</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_1_35)">
+                <path
+                  d="M10 0L11.3777 6.67403L17.0711 2.92893L13.326 8.62234L20 10L13.326 11.3777L17.0711 17.0711L11.3777 13.326L10 20L8.62234 13.326L2.92893 17.0711L6.67403 11.3777L0 10L6.67403 8.62234L2.92893 2.92893L8.62234 6.67403L10 0Z"
+                  fill="#E94D35" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_35">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p>DEVELOPMENT</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_1_35)">
+                <path
+                  d="M10 0L11.3777 6.67403L17.0711 2.92893L13.326 8.62234L20 10L13.326 11.3777L17.0711 17.0711L11.3777 13.326L10 20L8.62234 13.326L2.92893 17.0711L6.67403 11.3777L0 10L6.67403 8.62234L2.92893 2.92893L8.62234 6.67403L10 0Z"
+                  fill="#E94D35" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_35">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p>WEBFLOW</p>
+          </div>
+          <div class="btn-main-section">
+            <button class="button-dark" type="button">Got a project?</button>
+            <button class="btn-light" type="button">Let's talk.</button>
+          </div>
+        </div>
+        <img class="main-img" src="./images/tayler.jpg" alt="tayler">
+      </div>
+    </section>
+    <section class="banner-section">
+      <div class="banner flex flex-between position-center gap65">
+        <div class="banner-items flex position-center flex-between gap10">
+          <p>DEVELOPMENT</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_1_57)">
               <path
-                d="M63.5684 7.39453C65.2279 7.39453 66.5598 7.9404 67.5642 9.03214C68.5686 10.1021 69.0708 11.5104 69.0708 13.2572V23.9999H64.6165V13.2572C64.6165 12.6458 64.4746 12.1654 64.1907 11.8161C63.9069 11.4449 63.5357 11.2593 63.0771 11.2593H61.6688C61.0574 11.2593 60.5225 11.4886 60.0639 11.9471C59.6054 12.3838 59.3215 12.9733 59.2124 13.7157V23.9999H54.7581V13.2899C54.7581 12.6786 54.6161 12.1873 54.3323 11.8161C54.0484 11.4449 53.6773 11.2593 53.2187 11.2593H51.9414C51.3082 11.2593 50.7514 11.5432 50.271 12.1109C49.7907 12.6786 49.485 13.421 49.354 14.338V23.9999H44.8997V7.65655H49.0264V9.55618C49.4195 8.90113 49.9217 8.3771 50.533 7.98407C51.1663 7.59105 51.7995 7.39453 52.4327 7.39453H54.2668C55.0528 7.39453 55.7625 7.60196 56.3957 8.01682C57.0507 8.43169 57.5638 9.01031 57.935 9.75269C58.4154 9.01031 58.9831 8.43169 59.6382 8.01682C60.315 7.60196 61.0247 7.39453 61.767 7.39453H63.5684ZM78.656 24.2619C77.2804 24.2619 76.0576 23.9999 74.9877 23.4759C73.9396 22.93 73.1208 22.1658 72.5313 21.1832C71.9636 20.2006 71.6797 19.0652 71.6797 17.777V13.945C71.6797 12.6567 71.9745 11.5213 72.564 10.5388C73.1536 9.53435 73.9724 8.75921 75.0205 8.21334C76.0904 7.66747 77.3131 7.39453 78.6887 7.39453H81.6364C83.012 7.39453 84.2238 7.66747 85.2719 8.21334C86.3418 8.75921 87.1715 9.53435 87.7611 10.5388C88.3506 11.5213 88.6454 12.6567 88.6454 13.945V17.777C88.6454 19.0652 88.3506 20.2006 87.7611 21.1832C87.1715 22.1658 86.3418 22.93 85.2719 23.4759C84.2238 23.9999 83.0011 24.2619 81.6037 24.2619H78.656ZM81.5382 20.4299C82.346 20.4299 82.9902 20.157 83.4705 19.6111C83.9509 19.0434 84.1911 18.3119 84.1911 17.4167V14.2398C84.1911 13.3445 83.9509 12.624 83.4705 12.0781C82.9902 11.5104 82.357 11.2266 81.5709 11.2266H78.7542C77.9682 11.2266 77.335 11.5104 76.8546 12.0781C76.3742 12.624 76.134 13.3445 76.134 14.2398V17.4167C76.134 18.3119 76.3742 19.0434 76.8546 19.6111C77.335 20.157 77.9572 20.4299 78.7215 20.4299H81.5382ZM94.8793 15.7136L88.8857 7.65655H93.864L97.4668 12.5039L101.07 7.65655H106.048L100.054 15.7136L106.244 23.9999H101.266L97.4668 18.8905L93.6675 23.9999H88.6892L94.8793 15.7136ZM112.422 24.2619C110.718 24.2619 109.343 23.8361 108.295 22.9846C107.247 22.133 106.723 21.0085 106.723 19.6111V18.3993C106.723 17.0237 107.269 15.921 108.36 15.0913C109.452 14.2398 110.893 13.814 112.684 13.814H114.681C115.249 13.814 115.861 13.8904 116.516 14.0432C117.171 14.1961 117.771 14.4035 118.317 14.6655V12.9624C118.317 12.4165 118.131 11.9799 117.76 11.6523C117.411 11.303 116.941 11.1283 116.352 11.1283H113.535C112.924 11.1283 112.432 11.2702 112.061 11.5541C111.69 11.8379 111.504 12.22 111.504 12.7004H107.181C107.181 11.1065 107.76 9.82912 108.917 8.86838C110.096 7.88582 111.635 7.39453 113.535 7.39453H116.352C118.273 7.39453 119.824 7.90765 121.003 8.93389C122.182 9.93829 122.771 11.2811 122.771 12.9624V23.9999H118.644V22.0348C118.12 22.7116 117.476 23.2575 116.712 23.6724C115.948 24.0654 115.195 24.2619 114.452 24.2619H112.422ZM114.78 20.8557C115.588 20.8557 116.308 20.6483 116.941 20.2334C117.575 19.8185 118.033 19.2617 118.317 18.563V18.0062C117.968 17.7442 117.476 17.5368 116.843 17.3839C116.232 17.2311 115.577 17.1547 114.878 17.1547H112.815C112.291 17.1547 111.865 17.2857 111.537 17.5477C111.21 17.8097 111.046 18.1591 111.046 18.5958V19.4473C111.046 19.8622 111.221 20.2006 111.57 20.4627C111.941 20.7247 112.422 20.8557 113.011 20.8557H114.78ZM128.077 24.3274C127.269 24.3274 126.614 24.0872 126.111 23.6069C125.631 23.1047 125.391 22.4496 125.391 21.6417C125.391 20.8338 125.631 20.1897 126.111 19.7094C126.614 19.2072 127.269 18.9561 128.077 18.9561C128.885 18.9561 129.529 19.2072 130.009 19.7094C130.511 20.1897 130.762 20.8338 130.762 21.6417C130.762 22.4496 130.511 23.1047 130.009 23.6069C129.529 24.0872 128.885 24.3274 128.077 24.3274Z"
-                fill="#161513"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M17.1429 0H14.8571V10.1205L11.0659 0.736931L8.94666 1.59318L12.8361 11.2198L5.49442 3.87816L3.87818 5.49442L10.9148 12.5311L1.79586 8.5469L0.880734 10.6414L10.5297 14.8571H0V17.1429H10.5297L0.880738 21.3586L1.79586 23.4531L10.9148 19.469L3.87818 26.5056L5.49442 28.1218L12.8361 20.7802L8.94666 30.4069L11.0659 31.263L14.8571 21.8795V32H17.1429V21.8795L20.9341 31.263L23.0533 30.4069L19.164 20.7802L26.5056 28.1218L28.1218 26.5056L21.0851 19.469L30.2042 23.4531L31.1192 21.3586L21.4704 17.1429H32V14.8571H21.4702L31.1192 10.6414L30.2042 8.5469L21.0851 12.5311L28.1218 5.4944L26.5056 3.87816L19.164 11.2198L23.0533 1.59318L20.9341 0.736931L17.1429 10.1205V0Z"
-                fill="#E94D35"
-              />
+                d="M11.2478 1.72266L13.3181 8.57779L19.0464 4.13656L15.5699 10.4368L22.8055 11.2644L15.8186 13.3192L20.323 18.9309L13.9186 15.5365L13.0531 22.6449L10.9827 15.7898L5.25443 20.2311L8.73094 13.9308L1.49538 13.1032L8.48223 11.0484L3.97791 5.43674L10.3823 8.83111L11.2478 1.72266Z"
+                fill="#E94D35" />
             </g>
             <defs>
-              <clipPath id="clip0_1_17">
-                <rect width="131" height="32" fill="white" />
+              <clipPath id="clip0_1_57">
+                <rect width="21.3893" height="21" fill="white"
+                  transform="translate(0.592743 2.64203) rotate(-4.93154)" />
               </clipPath>
             </defs>
           </svg>
         </div>
-        <div class="nav flex">
-          <a href="#"
-            >Home
-            <hr
-          /></a>
-          <a href="#"
-            >About
-            <hr
-          /></a>
-          <a href="#"
-            >Contact
-            <hr
-          /></a>
+        <div class="banner-items flex position-center flex-between gap10">
+          <p>STRATEGY</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_1_57)">
+              <path
+                d="M11.2478 1.72266L13.3181 8.57779L19.0464 4.13656L15.5699 10.4368L22.8055 11.2644L15.8186 13.3192L20.323 18.9309L13.9186 15.5365L13.0531 22.6449L10.9827 15.7898L5.25443 20.2311L8.73094 13.9308L1.49538 13.1032L8.48223 11.0484L3.97791 5.43674L10.3823 8.83111L11.2478 1.72266Z"
+                fill="#E94D35" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_57">
+                <rect width="21.3893" height="21" fill="white"
+                  transform="translate(0.592743 2.64203) rotate(-4.93154)" />
+              </clipPath>
+            </defs>
+          </svg>
         </div>
-        <div class="btn">
-          <button type="button">Let's talk</button>
+        <div class="banner-items flex position-center flex-between gap10">
+          <p>PRODUCT DESIGN</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_1_57)">
+              <path
+                d="M11.2478 1.72266L13.3181 8.57779L19.0464 4.13656L15.5699 10.4368L22.8055 11.2644L15.8186 13.3192L20.323 18.9309L13.9186 15.5365L13.0531 22.6449L10.9827 15.7898L5.25443 20.2311L8.73094 13.9308L1.49538 13.1032L8.48223 11.0484L3.97791 5.43674L10.3823 8.83111L11.2478 1.72266Z"
+                fill="#E94D35" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_57">
+                <rect width="21.3893" height="21" fill="white"
+                  transform="translate(0.592743 2.64203) rotate(-4.93154)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="banner-items flex position-center flex-between gap10">
+          <p>MOTION GRAPHIC</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_1_57)">
+              <path
+                d="M11.2478 1.72266L13.3181 8.57779L19.0464 4.13656L15.5699 10.4368L22.8055 11.2644L15.8186 13.3192L20.323 18.9309L13.9186 15.5365L13.0531 22.6449L10.9827 15.7898L5.25443 20.2311L8.73094 13.9308L1.49538 13.1032L8.48223 11.0484L3.97791 5.43674L10.3823 8.83111L11.2478 1.72266Z"
+                fill="#E94D35" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_57">
+                <rect width="21.3893" height="21" fill="white"
+                  transform="translate(0.592743 2.64203) rotate(-4.93154)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="banner-items flex position-center flex-between gap10">
+          <p>ART DIRECTION</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_1_57)">
+              <path
+                d="M11.2478 1.72266L13.3181 8.57779L19.0464 4.13656L15.5699 10.4368L22.8055 11.2644L15.8186 13.3192L20.323 18.9309L13.9186 15.5365L13.0531 22.6449L10.9827 15.7898L5.25443 20.2311L8.73094 13.9308L1.49538 13.1032L8.48223 11.0484L3.97791 5.43674L10.3823 8.83111L11.2478 1.72266Z"
+                fill="#E94D35" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_57">
+                <rect width="21.3893" height="21" fill="white"
+                  transform="translate(0.592743 2.64203) rotate(-4.93154)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="banner-items flex position-center flex-between gap10">
+          <p>DESIGN</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_1_57)">
+              <path
+                d="M11.2478 1.72266L13.3181 8.57779L19.0464 4.13656L15.5699 10.4368L22.8055 11.2644L15.8186 13.3192L20.323 18.9309L13.9186 15.5365L13.0531 22.6449L10.9827 15.7898L5.25443 20.2311L8.73094 13.9308L1.49538 13.1032L8.48223 11.0484L3.97791 5.43674L10.3823 8.83111L11.2478 1.72266Z"
+                fill="#E94D35" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_57">
+                <rect width="21.3893" height="21" fill="white"
+                  transform="translate(0.592743 2.64203) rotate(-4.93154)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="banner-items flex position-center flex-between gap10">
+          <p>BRANDING</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_1_57)">
+              <path
+                d="M11.2478 1.72266L13.3181 8.57779L19.0464 4.13656L15.5699 10.4368L22.8055 11.2644L15.8186 13.3192L20.323 18.9309L13.9186 15.5365L13.0531 22.6449L10.9827 15.7898L5.25443 20.2311L8.73094 13.9308L1.49538 13.1032L8.48223 11.0484L3.97791 5.43674L10.3823 8.83111L11.2478 1.72266Z"
+                fill="#E94D35" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_57">
+                <rect width="21.3893" height="21" fill="white"
+                  transform="translate(0.592743 2.64203) rotate(-4.93154)" />
+              </clipPath>
+            </defs>
+          </svg>
         </div>
       </div>
-    </header>
-    <main></main>
-    <footer></footer>
-  </body>
+    </section>
+    <section class="product-section pb60 pt60">
+      <div class="container flex flex-between gap40">
+        <div class="product-info">
+          <p class="product-text text23">TAYLER <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_1_167)">
+                <path
+                  d="M10 0L11.3777 6.67403L17.0711 2.92893L13.326 8.62234L20 10L13.326 11.3777L17.0711 17.0711L11.3777 13.326L10 20L8.62234 13.326L2.92893 17.0711L6.67403 11.3777L0 10L6.67403 8.62234L2.92893 2.92893L8.62234 6.67403L10 0Z"
+                  fill="#E94D35" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_167">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg> BARTHHOLD</p>
+          <p class="text56">Lead product designer and art director.</p>
+        </div>
+        <div class="about-product">
+          <p class="product-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            dolore</p>
+          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut
+            labore et
+            dolore magna aliqua.</p>
+          <div class="short-info flex flex-between position-center">
+            <div>
+              <p class="color-title">BORN IN</p>
+              <p class="text23">New York</p>
+            </div>
+            <div>
+              <p class="color-title">EXPERIENCE</p>
+              <p class="text23">7+ Years</p>
+            </div>
+            <div>
+              <p class="color-title">DATE OF BIRTH</p>
+              <p class="text23">27 June 1992</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience pb60 pt60">
+      <div class="container flex">
+        <div class="years experience-card border-bold flex-colomn position-center">
+          <p class="text56">7+</p>
+          <p class="uppercase">Years of Experience</p>
+        </div>
+        <div class="project experience-card border-bold flex-colomn position-center">
+          <p class="text56">50+</p>
+          <p class="uppercase">Project Completed</p>
+        </div>
+        <div class="clients experience-card border-bold flex-colomn position-center">
+          <p class="text56">30+</p>
+          <p class="uppercase">Happy Clients</p>
+        </div>
+      </div>
+    </section>
+    <section class="awards-section pt60 pb60">
+      <div class="container">
+        <div class="awards-title text-center mb60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <g clip-path="url(#clip0_1_199)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21.4286 0H18.5714V12.6506L13.8324 0.921164L11.1833 1.99147L16.0451 14.0248L6.86802 4.8477L4.84772 6.86802L13.6435 15.6638L2.24482 10.6836L1.10092 13.3018L13.1621 18.5714H0V21.4286H13.1621L1.10092 26.6982L2.24482 29.3164L13.6435 24.3362L4.84772 33.132L6.86802 35.1522L16.0451 25.9752L11.1833 38.0086L13.8324 39.0788L18.5714 27.3494V40H21.4286V27.3494L26.1676 39.0788L28.8166 38.0086L23.955 25.9752L33.132 35.1522L35.1522 33.132L26.3564 24.3362L37.7552 29.3164L38.899 26.6982L26.838 21.4286H40V18.5714H26.8378L38.899 13.3018L37.7552 10.6836L26.3564 15.6638L35.1522 6.868L33.132 4.8477L23.955 14.0248L28.8166 1.99147L26.1676 0.921164L21.4286 12.6506V0Z"
+                fill="#E94D35" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_199">
+                <rect width="40" height="40" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="awards-text text45">Awards</p>
+          <p class="text18">REGONITIONS & ACCOIMPLISHMENTS</p>
+        </div>
+        <div class="cards flex flex-colomn gap24">
+          <div class="awards-cards flex flex-between border-bold">
+            <div class="card flex position-center flex-between">
+              <div class="card-item flex position-center flex-between gap24">
+                <p class="box">1</p>
+                <div>
+                  <p class="text23">Webflow Awwwards Team</p>
+                  <p class="card-title">Runner Up - Webflow Expert Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-item2 flex position-center flex-between gap16">
+              <p>PRODUCT DESIGN</p>
+              <p class="card-years">2022</p>
+            </div>
+          </div>
+          <div class="awards-cards flex flex-between border-bold">
+            <div class="card flex position-center flex-between">
+              <div class="card-item flex position-center flex-between gap24">
+                <p class="box">2</p>
+                <div>
+                  <p class="text23">Webflow Awwwards Team</p>
+                  <p class="card-title">Runner Up - Webflow Expert Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-item2 flex position-center flex-between gap16">
+              <p>PRODUCT DESIGN</p>
+              <p class="card-years">2022</p>
+            </div>
+          </div>
+          <div class="awards-cards flex flex-between border-bold">
+            <div class="card flex position-center flex-between">
+              <div class="card-item flex position-center flex-between gap24">
+                <p class="box">3</p>
+                <div>
+                  <p class="text23">Webflow Awwwards Team</p>
+                  <p class="card-title">Runner Up - Webflow Expert Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-item2 flex position-center flex-between gap16">
+              <p>PRODUCT DESIGN</p>
+              <p class="card-years">2022</p>
+            </div>
+          </div>
+          <div class="awards-cards flex flex-between border-bold">
+            <div class="card flex position-center flex-between">
+              <div class="card-item flex position-center flex-between gap24">
+                <p class="box">4</p>
+                <div>
+                  <p class="text23">Webflow Awwwards Team</p>
+                  <p class="card-title">Runner Up - Webflow Expert Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-item2 flex position-center flex-between gap16">
+              <p>PRODUCT DESIGN</p>
+              <p class="card-years">2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio pt60 pb60">
+      <div class="container">
+        <div class="portfolio-title text-center mb60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <g clip-path="url(#clip0_1_199)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21.4286 0H18.5714V12.6506L13.8324 0.921164L11.1833 1.99147L16.0451 14.0248L6.86802 4.8477L4.84772 6.86802L13.6435 15.6638L2.24482 10.6836L1.10092 13.3018L13.1621 18.5714H0V21.4286H13.1621L1.10092 26.6982L2.24482 29.3164L13.6435 24.3362L4.84772 33.132L6.86802 35.1522L16.0451 25.9752L11.1833 38.0086L13.8324 39.0788L18.5714 27.3494V40H21.4286V27.3494L26.1676 39.0788L28.8166 38.0086L23.955 25.9752L33.132 35.1522L35.1522 33.132L26.3564 24.3362L37.7552 29.3164L38.899 26.6982L26.838 21.4286H40V18.5714H26.8378L38.899 13.3018L37.7552 10.6836L26.3564 15.6638L35.1522 6.868L33.132 4.8477L23.955 14.0248L28.8166 1.99147L26.1676 0.921164L21.4286 12.6506V0Z"
+                fill="#E94D35" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_199">
+                <rect width="40" height="40" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="portfolio-text text45">Portfolio</p>
+          <p class="text18">REGONITIONS & ACCOIMPLISHMENTS</p>
+        </div>
+        <div class="wrapper flex flex-wrap gap96">
+          <div class="cards-portfolio flex flex-between position-center gap40">
+            <img src="./images/1.jpg" alt="image">
+            <div class="about-card">
+              <button class="btn-portfolio">Art Direction</button>
+              <p class="title-portfolio">Beautiful and advanced website interfaces</p>
+              <a class="read" target="_blank" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="cards-portfolio flex flex-between position-center gap40">
+            <div class="about-card">
+              <button class="btn-portfolio">Branding</button>
+              <p class="title-portfolio">Design and extreme programming practice</p>
+              <a class="read" target="_blank" href="#">Read More</a>
+            </div>
+            <img src="./images/2.jpg" alt="image">
+          </div>
+          <div class="cards-portfolio flex flex-between position-center gap40">
+            <img src="./images/3.jpg" alt="image">
+            <div class="about-card">
+              <button class="btn-portfolio">Web Design</button>
+              <p class="title-portfolio">Nature inspired design</p>
+              <a class="read" target="_blank" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="cards-portfolio flex flex-between position-center gap40">
+            <div class="about-card">
+              <button class="btn-portfolio">Motion Graphics</button>
+              <p class="title-portfolio">Design & concept <br>at work.</p>
+              <a class="read" target="_blank" href="#">Read More</a>
+            </div>
+            <img src="./images/4.jpg" alt="image">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services pt60">
+      <div class="container">
+        <div class="portfolio-title text-center mb60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <g clip-path="url(#clip0_1_199)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21.4286 0H18.5714V12.6506L13.8324 0.921164L11.1833 1.99147L16.0451 14.0248L6.86802 4.8477L4.84772 6.86802L13.6435 15.6638L2.24482 10.6836L1.10092 13.3018L13.1621 18.5714H0V21.4286H13.1621L1.10092 26.6982L2.24482 29.3164L13.6435 24.3362L4.84772 33.132L6.86802 35.1522L16.0451 25.9752L11.1833 38.0086L13.8324 39.0788L18.5714 27.3494V40H21.4286V27.3494L26.1676 39.0788L28.8166 38.0086L23.955 25.9752L33.132 35.1522L35.1522 33.132L26.3564 24.3362L37.7552 29.3164L38.899 26.6982L26.838 21.4286H40V18.5714H26.8378L38.899 13.3018L37.7552 10.6836L26.3564 15.6638L35.1522 6.868L33.132 4.8477L23.955 14.0248L28.8166 1.99147L26.1676 0.921164L21.4286 12.6506V0Z"
+                fill="#E94D35" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_199">
+                <rect width="40" height="40" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="portfolio-text text45">Services</p>
+          <p class="text18">REGONITIONS & ACCOIMPLISHMENTS</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>

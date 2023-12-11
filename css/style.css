@@ -3,13 +3,13 @@
   --container-width: 1060px;
   --basic-space: 1rem;
   --color: #161513;
-  --text-color-white: #FFFFFF;
-  --background-color: #F2F1EF;
-  --brand-orange-color: #E94D35;
-  }
+  --text-color-white: #ffffff;
+  --background-color: #f2f1ef;
+  --brand-orange-color: #e94d35;
+}
 
 html {
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
@@ -53,22 +53,25 @@ a {
   text-decoration: none;
 }
 
-h1 {
- font-size: 56px;
- line-height: 64px;
- letter-spacing: 0.56px;
+.text56 {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.56px;
+  font-weight: 400;
 }
 
-h2 {
-font-size: 45px;
-line-height: 56px;
-letter-spacing: 1.44px;
+.text45 {
+  font-size: 45px;
+  line-height: 56px;
+  letter-spacing: 1.44px;
+  margin-top: 22px;
+  margin-bottom: 18px;
 }
 
-h3 {
-font-size: 18px;
-letter-spacing: 1.44px;
-text-transform: uppercase;
+.text18 {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1.44px;
 }
 
 .text-center {
@@ -81,7 +84,7 @@ text-transform: uppercase;
 }
 
 .border-small {
- border: 1px solid var(--color);
+  border: 1px solid var(--color);
 }
 
 .border-bold {
@@ -100,14 +103,108 @@ text-transform: uppercase;
   align-items: center;
 }
 
+.flex-colomn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap16 {
+  gap: 16px;
+}
+
+.gap24 {
+  gap: 24px;
+}
+
+.gap35 {
+  gap: 35px;
+}
+
 .gap40 {
   gap: 40px;
 }
 
-button {
-  min-width: 126px;
-  min-height: 42px;
+.gap96 {
+  gap: 96px;
+}
+
+.button-dark {
+  min-width: 179px;
+  min-height: 50px;
   border: 1px solid var(--color);
+  background-color: var(--color);
+  color: var(--text-color-white);
+  font-size: 16px;
+}
+
+.btn-portfolio {
+  border: none;
+  padding: 4px 12px;
+  background-color: var(--brand-orange-color);
+  color: var(--text-color-white);
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+
+.color-title {
+  color: var(--brand-orange-color);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.title-portfolio {
+  margin-top: 35px;
+  margin-bottom: 49px;
+  font-size: 45px;
+  line-height: 56px;
+  letter-spacing: 1.44px;
+}
+
+.read {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.text23 {
+  font-size: 23px;
+  line-height: 32px;
+  letter-spacing: 0.48px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.pt60 {
+  padding-top: 60px;
+}
+
+.pb60 {
+  padding-bottom: 60px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.experience-card {
+  background-color: var(--background-color);
+  min-width: 352px;
+  padding: 21.5px 72px 23.5px 72px;
+}
+
+.about-card {
+  min-width: 556px;
 }
 
 /* HEADER */
@@ -125,3 +222,139 @@ header {
 header .nav {
   gap: 32px;
 }
+
+.btn-header {
+  min-height: 42px;
+  min-width: 126px;
+  background-color: var(--background-color);
+  color: var(--color);
+  border: 1px solid var(--color);
+  font-size: 16px;
+}
+
+.box {
+  min-width: 48px;
+  min-height: 48px;
+  margin-left: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brand-orange-color);
+  color: var(--text-color-white);
+  text-align: center;
+}
+
+/* MAIN-SECTION */
+
+.main-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.about-title {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.56px;
+  font-weight: 400;
+}
+
+.about-title .mr4 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.who {
+  margin-top: 35px;
+  gap: 16px;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.48px;
+}
+
+.btn-main-section {
+  margin: 0;
+  margin-top: 40px;
+  font-size: 0;
+}
+
+.btn-light {
+  background-color: var(--background-color);
+  color: var(--color);
+  min-width: 144px;
+  min-height: 50px;
+  font-size: 16px;
+  border: 1px solid var(--color);
+}
+
+/* BANNER-SECTION */
+
+.banner-section {
+  padding-top: 80px;
+  padding-bottom: 135px;
+}
+
+.banner {
+  padding-left: 30px;
+  min-height: 75px;
+  background-color: var(--color);
+  color: var(--text-color-white);
+  transform: rotate(-4.932deg);
+  margin: -10px;
+  font-size: 18px;
+}
+
+/* PRODUCT-SECTION */
+
+.product-info {
+  max-width: 351px;
+}
+
+.about-product {
+  max-width: 612px;
+}
+
+.product-title {
+  margin-bottom: 36px;
+  font-size: 31px;
+  line-height: 40px;
+  letter-spacing: 0.64px;
+}
+
+.product-text {
+  margin-bottom: 21px;
+}
+
+.about-text {
+  margin-bottom: 27px;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+/* EXPERIENCE-SECTION */
+
+.project {
+  background-color: var(--color);
+  color: var(--text-color-white);
+}
+
+.experience .uppercase {
+  letter-spacing: 1.28px;
+}
+
+/* AWARDS-SECTION */
+
+.awards-cards {
+  min-height: 140px;
+}
+
+.card-years {
+  margin-right: 34px;
+}
+
+.card-title {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+/* SERVICES-SECTION */
