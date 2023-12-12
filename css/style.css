@@ -99,6 +99,10 @@ a {
   justify-content: space-between;
 }
 
+.flex-around {
+  justify-content: space-around;
+}
+
 .position-center {
   align-items: center;
 }
@@ -241,7 +245,6 @@ header .nav {
   align-items: center;
   background-color: var(--brand-orange-color);
   color: var(--text-color-white);
-  text-align: center;
 }
 
 /* MAIN-SECTION */
@@ -357,4 +360,59 @@ header .nav {
   line-height: 32px;
 }
 
+/* PORTFOLIO-SECTION */
+
 /* SERVICES-SECTION */
+
+.cards-title {
+font-size: 31px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0.64px;
+margin-bottom: 28px;
+}
+
+.service-card {
+  min-width: 48%;
+  padding: 34px 49px 30px 34px;
+}
+
+/* CUSTOMER-SECTION */
+
+.customer-section {
+  padding-top: 160px;
+}
+
+.customer-cards {
+  gap: 32px;
+  line-height: 96px;
+
+}
+
+.customer-card {
+ min-width: 241px;
+ min-height: 98px;
+ line-height: 96px;
+ flex-basis: calc(calc(100% / 4) - calc(96px / 3));
+}
+
+/* ARTICLES-SECTION */
+
+.articles-cards {
+  min-height: 548px
+}
+
+.articles-card {
+  min-width: 48px;
+  min-height: 72px
+}
+
+.articles-date {
+  color: var(--brand-orange-color);
+letter-spacing: 1.28px;
+text-transform: uppercase;
+}
+
+.title-articles {
+  flex-basis: calc(calc(100% / 2) - calc(90px / 3));
+}
