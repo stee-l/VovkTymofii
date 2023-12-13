@@ -402,6 +402,10 @@ margin-bottom: 28px;
 
 /* ARTICLES-SECTION */
 
+.articles-section {
+  padding-bottom: 136px;
+}
+
 .articles-cards {
   min-height: 548px
 }
@@ -427,6 +431,11 @@ text-transform: uppercase;
   line-height: 32px;
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.images {
+  position: absolute;
+  right: 0;
 }
 
 /* SUBSCRIBE-SECTION */
