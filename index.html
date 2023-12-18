@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework #13 Form</title>
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <section class="main">
-        <div class="container flex flex-around">
-          <form class="wrapper bg-form flex-grow" action="">
-            <div class="btn-border flex flex-between">
-              <button class="btn-login" type="button">Вход</button>
-              <button class="btn-reg flex-grow" type="button">
-                Регистрация
-              </button>
-            </div>
-            <!-- <input type="text" /> -->
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework #13 Form</title>
+  <link rel="stylesheet" href="./fonts/stylesheet.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <section class="main">
+      <div class="container flex flex-around">
+        <form class="wrapper flex flex-column bg-form flex-grow" action="">
+          <div class="btn-border flex flex-between">
+            <button class="btn-login" type="button">Вход</button>
+            <button class="btn-reg flex-grow" type="button">
+              Регистрация
+            </button>
+          </div>
+          <span class="login">Вход</span>
+          <input class="email" type="email" name="Введите E-mail" id="Введите E-mail" placeholder="Введите E-mail">
+          <input class="password" type="password" name="Пароль" id="Пароль" placeholder="Пароль">
+          <label class="flex flex-between" for="checkbox">
+            <input type="checkbox" name="Запомнить меня" id="checkbox">
+            <span>Запомнить меня</span>
+          </label>
+          <a href="#" target="_blank">Забыли пароль?</a>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
