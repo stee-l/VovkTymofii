@@ -1,6 +1,8 @@
 :root {
-    --container-width: 1100px;
+    --container-width: 500px;
     --basic-space: 1rem;
+    --primary-color: #153416;
+    --secondary-color: #fff;
   }
 
  * {
@@ -14,19 +16,24 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
     font-weight: 400;
-    color: var();
+    color: var(--secondary-color);
 }
 
 .container {
     width: 100%;
-    max-width: calc(var(--container-width) + var(--basic-space) * 2);
+    max-width: var(--container-width);
+    min-height: 100vh;
     padding-left: var(--basic-space);
     padding-right: var(--basic-space);
+    position: absolute;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 60px;
+    background: rgba(233, 233, 233, 0.25);
+    backdrop-filter: blur(5px);
   }
 
 a {
@@ -34,5 +41,54 @@ a {
     text-decoration: none;
   }
 
-  /* HEADER */
+  .flex {
+    display: flex;
+  }
 
+  .flex-between {
+    justify-content: space-between;
+  }
+
+  .flex-around {
+    justify-content: space-around;
+  }
+
+  .flex-grow {
+    flex-grow: 1;
+  }
+
+  /* MAIN-SECTION */
+
+.main {
+  background: url(../images/bg.jpg) no-repeat center/cover;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 340px;
+}
+
+.btn-border {
+  max-width: 340px;
+  max-height: 36px;
+  padding: 1px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-login {
+  min-width: 168px;
+  min-height: 32px;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  border: none;
+  color: #FFF;
+  font-size: 12px;
+}
+
+.btn-reg {
+  border: none;
+  background-color: transparent;
+  color: #FFF;
+  font-size: 12px;
+}
